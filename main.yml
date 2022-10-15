@@ -40,7 +40,7 @@
           mode: '0644' 
       - name: install packages
         yum: 
-          name: "{{ items }}"
+          name: "{{ item }}"
           state:  present
         loop:  
           - git
